@@ -1,0 +1,265 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:RFSolutions
+LIBS:rfcom
+LIBS:maxim
+LIBS:soilsensor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RFD77101 U?
+U 1 1 595643C3
+P 6400 3400
+F 0 "U?" H 6200 4800 50  0000 C CNN
+F 1 "RFD77101" H 6100 4700 50  0000 C CNN
+F 2 "" H 7200 2200 50  0001 C CNN
+F 3 "" H 6400 1900 50  0001 C CNN
+	1    6400 3400
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 7500 2400 800  300 
+U 595666C6
+F0 "PowerMgmt" 60
+F1 "PowerMgmt.sch" 60
+F2 "~PGOOD" I L 7500 2500 60 
+F3 "~CHG" I L 7500 2600 60 
+$EndSheet
+$Sheet
+S 3700 2900 800  200 
+U 59567161
+F0 "CapacitiveSoilSensor" 60
+F1 "CapacitiveSoilSensor.sch" 60
+F2 "SensorOut" I R 4500 3000 60 
+$EndSheet
+$Comp
+L C C?
+U 1 1 59567DAD
+P 5300 1800
+F 0 "C?" H 5325 1900 50  0000 L CNN
+F 1 "1u" H 5325 1700 50  0000 L CNN
+F 2 "" H 5338 1650 50  0001 C CNN
+F 3 "" H 5300 1800 50  0001 C CNN
+	1    5300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59567E26
+P 6100 4800
+F 0 "#PWR?" H 6100 4550 50  0001 C CNN
+F 1 "GND" H 6100 4650 50  0000 C CNN
+F 2 "" H 6100 4800 50  0001 C CNN
+F 3 "" H 6100 4800 50  0001 C CNN
+	1    6100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4700 6300 4700
+Connection ~ 6000 4700
+Connection ~ 6100 4700
+Connection ~ 6200 4700
+Wire Wire Line
+	6100 4700 6100 4800
+$Comp
+L GND #PWR?
+U 1 1 59567F28
+P 5300 2050
+F 0 "#PWR?" H 5300 1800 50  0001 C CNN
+F 1 "GND" H 5300 1900 50  0000 C CNN
+F 2 "" H 5300 2050 50  0001 C CNN
+F 3 "" H 5300 2050 50  0001 C CNN
+	1    5300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 59567FFA
+P 5300 1550
+F 0 "#PWR?" H 5300 1400 50  0001 C CNN
+F 1 "VDD" H 5300 1700 50  0000 C CNN
+F 2 "" H 5300 1550 50  0001 C CNN
+F 3 "" H 5300 1550 50  0001 C CNN
+	1    5300 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1550 5300 1650
+Wire Wire Line
+	5300 1950 5300 2050
+Wire Wire Line
+	5300 1600 6400 1600
+Wire Wire Line
+	6400 1600 6400 2100
+Connection ~ 5300 1600
+NoConn ~ 6700 4700
+NoConn ~ 6800 4700
+NoConn ~ 6500 4700
+NoConn ~ 6600 4700
+NoConn ~ 6400 4700
+Wire Wire Line
+	7100 2500 7500 2500
+Wire Wire Line
+	7100 2600 7500 2600
+Wire Wire Line
+	5700 3000 4500 3000
+$Comp
+L CONN_01X06 J?
+U 1 1 595676C1
+P 4000 1900
+F 0 "J?" H 4000 2250 50  0000 C CNN
+F 1 "CONN_01X06" V 4100 1900 50  0000 C CNN
+F 2 "" H 4000 1900 50  0001 C CNN
+F 3 "" H 4000 1900 50  0001 C CNN
+	1    4000 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR?
+U 1 1 5956777F
+P 4300 1600
+F 0 "#PWR?" H 4300 1450 50  0001 C CNN
+F 1 "VDD" H 4300 1750 50  0000 C CNN
+F 2 "" H 4300 1600 50  0001 C CNN
+F 3 "" H 4300 1600 50  0001 C CNN
+	1    4300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 595677AB
+P 4300 2200
+F 0 "#PWR?" H 4300 1950 50  0001 C CNN
+F 1 "GND" H 4300 2050 50  0000 C CNN
+F 2 "" H 4300 2200 50  0001 C CNN
+F 3 "" H 4300 2200 50  0001 C CNN
+	1    4300 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2150 4300 2150
+Wire Wire Line
+	4300 2150 4300 2200
+Wire Wire Line
+	4200 1650 4300 1650
+Wire Wire Line
+	4300 1650 4300 1600
+Text Label 4200 1750 0    60   ~ 0
+SWDIO/RESET
+Text Label 4200 1850 0    60   ~ 0
+SWDCLK
+Text Label 4200 1950 0    60   ~ 0
+GPIO0
+Text Label 4200 2050 0    60   ~ 0
+GPIO1
+Text Label 5700 2500 2    60   ~ 0
+SWDIO/RESET
+Text Label 5700 2600 2    60   ~ 0
+SWDCLK
+Text Label 5700 2800 2    60   ~ 0
+GPIO0
+Text Label 5700 2900 2    60   ~ 0
+GPIO1
+$Comp
+L DS18B20 U?
+U 1 1 59567BCA
+P 3950 4050
+F 0 "U?" H 3800 4300 50  0000 C CNN
+F 1 "DS18B20" H 3950 3800 50  0000 C CNN
+F 2 "" H 3800 4300 50  0001 C CNN
+F 3 "" H 3800 4300 50  0001 C CNN
+	1    3950 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 59567D40
+P 4600 3800
+F 0 "R?" V 4680 3800 50  0000 C CNN
+F 1 "4.7k" V 4600 3800 50  0000 C CNN
+F 2 "" V 4530 3800 50  0001 C CNN
+F 3 "" H 4600 3800 50  0001 C CNN
+	1    4600 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59567F04
+P 4300 4250
+F 0 "#PWR?" H 4300 4000 50  0001 C CNN
+F 1 "GND" H 4300 4100 50  0000 C CNN
+F 2 "" H 4300 4250 50  0001 C CNN
+F 3 "" H 4300 4250 50  0001 C CNN
+	1    4300 4250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4150 4300 4150
+Wire Wire Line
+	4300 3950 4300 4250
+Wire Wire Line
+	4250 4050 5350 4050
+Wire Wire Line
+	4250 3950 4300 3950
+Connection ~ 4300 4150
+$Comp
+L VDD #PWR?
+U 1 1 59568035
+P 4600 3550
+F 0 "#PWR?" H 4600 3400 50  0001 C CNN
+F 1 "VDD" H 4600 3700 50  0000 C CNN
+F 2 "" H 4600 3550 50  0001 C CNN
+F 3 "" H 4600 3550 50  0001 C CNN
+	1    4600 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3550 4600 3650
+Wire Wire Line
+	4600 3950 4600 4050
+Wire Wire Line
+	5350 4050 5350 3500
+Wire Wire Line
+	5350 3500 5700 3500
+Connection ~ 4600 4050
+$EndSCHEMATC
