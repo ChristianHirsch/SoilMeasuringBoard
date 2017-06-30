@@ -31,7 +31,7 @@ LIBS:valves
 LIBS:RFSolutions
 LIBS:rfcom
 LIBS:maxim
-LIBS:soilsensor-cache
+LIBS:battery_management
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
