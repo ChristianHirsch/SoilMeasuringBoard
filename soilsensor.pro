@@ -1,4 +1,4 @@
-update=Fri 30 Jun 2017 06:45:07 PM CEST
+update=Tue 04 Jul 2017 10:49:37 AM CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/home/chirsch/workspace/kicad-library/library
+LibDir=/home/chirsch/workspace/kicad-library/library;./
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,7 +58,6 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=RFSolutions
-LibName31=rfcom
-LibName32=maxim
-LibName33=battery_management
+LibName30=rfcom
+LibName31=maxim
+LibName32=battery_management
