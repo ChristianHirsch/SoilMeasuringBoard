@@ -66,11 +66,11 @@ F2 "~PGOOD" I L 7500 2500 60
 F3 "~CHG" I L 7500 2600 60 
 $EndSheet
 $Sheet
-S 3700 2900 800  200 
+S 4100 2950 800  200 
 U 59567161
 F0 "CapacitiveSoilSensor" 60
 F1 "CapacitiveSoilSensor.sch" 60
-F2 "SensorOut" I R 4500 3000 60 
+F2 "SensorOut" I R 4900 3050 60 
 $EndSheet
 $Comp
 L C C1
@@ -95,7 +95,7 @@ F 3 "" H 6100 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 4700 6300 4700
+	5900 4700 6800 4700
 Connection ~ 6000 4700
 Connection ~ 6100 4700
 Connection ~ 6200 4700
@@ -132,17 +132,10 @@ Wire Wire Line
 Wire Wire Line
 	6400 1600 6400 2100
 Connection ~ 5300 1600
-NoConn ~ 6700 4700
-NoConn ~ 6800 4700
-NoConn ~ 6500 4700
-NoConn ~ 6600 4700
-NoConn ~ 6400 4700
 Wire Wire Line
 	7100 2500 7500 2500
 Wire Wire Line
 	7100 2600 7500 2600
-Wire Wire Line
-	5700 3000 4500 3000
 $Comp
 L CONN_01X06 J1
 U 1 1 595676C1
@@ -262,4 +255,34 @@ Wire Wire Line
 Wire Wire Line
 	5350 3500 5700 3500
 Connection ~ 4600 4050
+Wire Wire Line
+	4900 3050 5550 3050
+Wire Wire Line
+	5550 3050 5550 3200
+Wire Wire Line
+	5550 3200 5700 3200
+$Comp
+L VDD #PWR?
+U 1 1 596CB151
+P 8800 2650
+F 0 "#PWR?" H 8800 2500 50  0001 C CNN
+F 1 "VDD" H 8800 2800 50  0000 C CNN
+F 2 "" H 8800 2650 50  0001 C CNN
+F 3 "" H 8800 2650 50  0001 C CNN
+	1    8800 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2700 7400 2700
+Wire Wire Line
+	7400 2700 7400 2850
+Wire Wire Line
+	7400 2850 8800 2850
+Wire Wire Line
+	8800 2850 8800 2650
+Connection ~ 6300 4700
+Connection ~ 6400 4700
+Connection ~ 6500 4700
+Connection ~ 6600 4700
+Connection ~ 6700 4700
 $EndSCHEMATC
