@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:soilsensor-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -58,12 +59,12 @@ F 3 "" H 6400 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 7500 2400 800  300 
+S 7500 2500 800  300 
 U 595666C6
 F0 "PowerMgmt" 60
 F1 "PowerMgmt.sch" 60
-F2 "~PGOOD" I L 7500 2500 60 
-F3 "~CHG" I L 7500 2600 60 
+F2 "~CHG" I L 7500 2600 60 
+F3 "EN" I L 7500 2700 60 
 $EndSheet
 $Sheet
 S 4100 2950 800  200 
@@ -132,10 +133,6 @@ Wire Wire Line
 Wire Wire Line
 	6400 1600 6400 2100
 Connection ~ 5300 1600
-Wire Wire Line
-	7100 2500 7500 2500
-Wire Wire Line
-	7100 2600 7500 2600
 $Comp
 L CONN_01X06 J1
 U 1 1 595676C1
@@ -262,27 +259,42 @@ Wire Wire Line
 Wire Wire Line
 	5550 3200 5700 3200
 $Comp
-L VDD #PWR?
+L VDD #PWR08
 U 1 1 596CB151
-P 8800 2650
-F 0 "#PWR?" H 8800 2500 50  0001 C CNN
-F 1 "VDD" H 8800 2800 50  0000 C CNN
-F 2 "" H 8800 2650 50  0001 C CNN
-F 3 "" H 8800 2650 50  0001 C CNN
-	1    8800 2650
+P 7300 2350
+F 0 "#PWR08" H 7300 2200 50  0001 C CNN
+F 1 "VDD" H 7300 2500 50  0000 C CNN
+F 2 "" H 7300 2350 50  0001 C CNN
+F 3 "" H 7300 2350 50  0001 C CNN
+	1    7300 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7100 2700 7400 2700
-Wire Wire Line
-	7400 2700 7400 2850
-Wire Wire Line
-	7400 2850 8800 2850
-Wire Wire Line
-	8800 2850 8800 2650
 Connection ~ 6300 4700
 Connection ~ 6400 4700
 Connection ~ 6500 4700
 Connection ~ 6600 4700
 Connection ~ 6700 4700
+Wire Wire Line
+	7100 2600 7500 2600
+Wire Wire Line
+	7100 2700 7500 2700
+Wire Wire Line
+	7100 2500 7300 2500
+Wire Wire Line
+	7300 2500 7300 2350
+$Comp
+L GND #PWR?
+U 1 1 59807528
+P 7300 2900
+F 0 "#PWR?" H 7300 2650 50  0001 C CNN
+F 1 "GND" H 7300 2750 50  0000 C CNN
+F 2 "" H 7300 2900 50  0001 C CNN
+F 3 "" H 7300 2900 50  0001 C CNN
+	1    7300 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2800 7300 2800
+Wire Wire Line
+	7300 2800 7300 2900
 $EndSCHEMATC
