@@ -1,4 +1,4 @@
-update=Wed 04 Oct 2017 12:38:42 PM CEST
+update=Wed 11 Oct 2017 04:26:35 PM CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,4 +61,5 @@ LibName29=contrib
 LibName30=valves
 LibName31=rfcom
 LibName32=maxim
-LibName33=battery_management
+LibName33=sensors
+LibName34=Battery_Management
