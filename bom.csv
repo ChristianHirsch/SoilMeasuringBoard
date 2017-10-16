@@ -24,4 +24,4 @@ Item #,Ref Des,Qty,Manufacturer,Mfg Part #,Description,Package,Type,Supplier,Ord
 ,P1,1,Amphenol FCI,10118192-0001LF,USB Connectors 5P MICRO USB TYPE B RECEPTACLE,,SMD,mouser.at,649-10118192-0001LF,"€ 0,376","€ 0,376"
 ,J1,1,Preci-dip,801-83-006-20-001101,CONN_01x06,,Thru-hole,mouser.at,437-8018300620001101,"€ 0,949","€ 0,949"
 ,J2,1,JST,S2B-PH-K-S(LF)(SN),Battery Connector,,Thru-hole,digikey.com,455-1719-ND,"€ 0,170","€ 0,170"
-,,,,,,,,,,,"€ 27,725"
+,,,,,,,,,,,=SUM(L2:L26)
