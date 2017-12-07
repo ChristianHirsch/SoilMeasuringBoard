@@ -1,4 +1,4 @@
-update=07.11.2017 12:47:29
+update=Tue 21 Nov 2017 04:16:34 PM CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,3 +63,13 @@ LibName31=rfcom
 LibName32=maxim
 LibName33=sensors
 LibName34=Battery_Management
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

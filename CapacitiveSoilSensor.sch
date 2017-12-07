@@ -354,6 +354,6 @@ F 1 "Q_PMOS_GSD" H 3500 2050 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 3500 2200 50  0001 C CNN
 F 3 "" H 3300 2100 50  0001 C CNN
 	1    3300 2100
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC
